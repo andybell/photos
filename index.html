@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Website" content="">
+	<meta name="Andy Bell photos" content="">
+
+	<title>Photos</title>
+
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="css/main.css" <!-- Bootstrap Core JavaScript -->
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+	<!-- Custom Fonts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+	<!--lightbox -->
+	<link href="css/lightbox.css" rel="stylesheet">
+
+
+	<!-- jQuery Version 1.11.0 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- masonry -->
+	<script src="js/masonry.pkgd.min.js"></script>
+
+
+</head>
+
+	
+	
+	
+	
+	
+
+<body>	
+	<div class="container">
+		<div class="row">	
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2194.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2194.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2218.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2218.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2231.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2231.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2751.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2751.JPG">
+				</a>
+			</div>
+		</div>
+	</div>	
+		
+	<div class="container">
+		<div class="row">	
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2348.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2348.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_9175.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_9175.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_2348.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_2348.JPG">
+				</a>
+			</div>			
+			<div class="col-xs-6 col-md-3">
+				<a href="img/Best2013/IMG_9175.JPG" class="thumbnail" data-lightbox="img2" data-title="Mussel beds on a rocky shore">
+					<img src="img/Best2013/IMG_9175.JPG">
+				</a>
+			</div>
+		</div>
+	</div>	
+	
+	
+	
+	
+	
+	
+		
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// navigation click actions
+			$('.scroll-link').on('click', function (event) {
+				event.preventDefault();
+				var sectionID = $(this).attr("data-id");
+				scrollToID('#' + sectionID, 750);
+			});
+			// scroll to top action
+			$('.scroll-top').on('click', function (event) {
+				event.preventDefault();
+				$('html, body').animate({
+					scrollTop: 0
+				}, 'slow');
+			});
+			// mobile nav toggle
+			$('#nav-toggle').on('click', function (event) {
+				event.preventDefault();
+				$('#main-nav').toggleClass("open");
+			});
+		});
+		// scroll function
+		function scrollToID(id, speed) {
+			var offSet = 50;
+			var targetOffset = $(id).offset().top - offSet;
+			var mainNav = $('#main-nav');
+			$('html,body').animate({
+				scrollTop: targetOffset
+			}, speed);
+			if (mainNav.hasClass("open")) {
+				mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+				mainNav.removeClass("open");
+			}
+		}
+		if (typeof console === "undefined") {
+			console = {
+				log: function () {}
+			};
+		}
+	</script>
+
+	<script src="js/lightbox.min.js"></script>
+</body>
+
+</html>

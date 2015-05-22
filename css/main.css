@@ -32,5 +32,14 @@
 	width: 25%;
 }
 .photo-contain{
-	padding: 25px;
+	padding: 0px;	
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+.caro{
+	max-height: 400px;
 }

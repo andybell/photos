@@ -13,8 +13,7 @@
 
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/main.css" <!-- Bootstrap Core JavaScript -->
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
@@ -23,13 +22,15 @@
 
 	<!--lightbox -->
 	<link href="css/lightbox.css" rel="stylesheet">
-
-
+	<script src="js/lightbox.min.js"></script>
+	
 	<!-- jQuery Version 1.11.0 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-	<!-- masonry -->
-	<script src="js/masonry.pkgd.min.js"></script>
+
 
 
 </head>
@@ -40,7 +41,41 @@
 	
 	
 
-<body>	
+<body>
+		
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="../index.html">Andy Bell</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Photos<span class="sr-only">(current)</span></a></li>
+		<li><a href="#">Projects</a></li>
+		<li><a href="#">About</a></li>
+        <li><a href="#" class="scroll-link" data-id="2013">2013</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	
+<div style="height: 300px;">
+	
+</div>	
+	
+	
+	
+<div style="padding: 25px;" id="2013">
 	<div class="container">
 		<div class="row">	
 			<div class="col-xs-6 col-md-3">
@@ -91,14 +126,9 @@
 		</div>
 	</div>	
 	
+</div>	
 	
 	
-	
-	
-	
-		
-
-
 	<script type="text/javascript">
 		$(document).ready(function () {
 			// navigation click actions
@@ -140,7 +170,7 @@
 		}
 	</script>
 
-	<script src="js/lightbox.min.js"></script>
+
 </body>
 
 </html>

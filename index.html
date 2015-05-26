@@ -44,28 +44,39 @@
 <body>
 		
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="../index.html">Andy Bell</a>
-    </div>
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://www.andymbell.com">Andy Bell</a>
+		</div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Photos<span class="sr-only">(current)</span></a></li>
-		<li><a href="#">Projects</a></li>
-		<li><a href="#">About</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav">
+
+				<li><a href="../index.html#projects" class="scroll-link" data-id="Projects">Projects</a>
+				</li>
+				<li><a href="../cv.html" data-id="Projects">CV</a>
+				</li>
+				<li><a href="../index.html#biketrip" class="scroll-link" data-id="biketrip">Bike Tour</a>
+				</li>
+				<li class="active"><a href="#">Photos <span class="sr-only">(current)</span></a></li>
+				<li><a href="../index.html#contact" class="scroll-link" data-id="Contact">Contact</a>
+				</li>
+
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
 </nav>
+
 <div class="container" style="padding-top: 75px;">
 </div>	
 	
@@ -398,6 +409,13 @@
         };
     }
 </script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000; //changes the speed
+    })
+    </script>
 
 </body>
 
